@@ -21,6 +21,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $usuarios = $conexao->query("SELECT id, nome FROM usuarios");
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Prato</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Cadastrar Prato</h1>
+    <a href="../index.php">Voltar ao Menu</a>
+    <br><br>
+
 <form method="POST" action="cadastrar.php">
     Nome do prato: <input type="text" name="nome"><br>
     Descrição: <input type="text" name="descricao"><br>
