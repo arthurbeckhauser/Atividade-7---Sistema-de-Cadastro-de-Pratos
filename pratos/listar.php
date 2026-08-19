@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "../conexao.php";
 
 $sql = "SELECT pratos.id, pratos.nome, pratos.descricao, pratos.preco, pratos.categoria, usuarios.nome AS responsavel
         FROM pratos
