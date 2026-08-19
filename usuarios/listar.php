@@ -38,11 +38,10 @@ $resultado = $conexao->query($sql);
                 <td><?php echo $usuario['id']; ?></td>
                 <td><?php echo $usuario['nome']; ?></td>
                 <td><?php echo $usuario['email']; ?></td>
-
-                <td>
-                    <a href="editar.php?id=<?php echo $usuario["id"]; ?>">Editar</a>
-                    <a href="excluir.php?id=<?php echo $usuario["id"]; ?>">Excluir</a>
-                </td>
+<td>
+    <a href="editar.php?id=<?php echo $usuario["id"]; ?>">Editar</a>
+    <a href="excluir.php?id=<?php echo $usuario["id"]; ?>">Excluir</a>
+</td>
             </tr>
 
         <?php } ?>

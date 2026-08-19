@@ -35,9 +35,10 @@ $resultado = $conexao->query($sql);
         <td><?php echo $prato["preco"]; ?></td>
         <td><?php echo $prato["categoria"]; ?></td>
         <td><?php echo $prato["responsavel"]; ?></td>
-        <td>
-            <a href="editar.php?id=<?php echo $prato["id"]; ?>">Editar</a>
-        </td>
+<td>
+    <a href="editar.php?id=<?php echo $prato["id"]; ?>">Editar</a>
+    <a href="excluir.php?id=<?php echo $prato["id"]; ?>">Excluir</a>
+</td>
     </tr>
     <?php } ?>
 </table>
