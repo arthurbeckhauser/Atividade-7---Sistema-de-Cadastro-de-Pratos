@@ -15,10 +15,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql->bind_param("ssdsi", $nome, $descricao, $preco, $categoria, $id);
         $sql->execute();
         echo "Prato atualizado com sucesso!";
+
+        header("Location: listar.php");
+        exit;
     }
 }
 
 $id = $_GET["id"];
+
 $sql = $conexao->prepare("SELECT * FROM pratos WHERE id = ?");
 $sql->bind_param("i", $id);
 $sql->execute();
