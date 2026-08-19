@@ -7,6 +7,18 @@ $sql = "SELECT pratos.id, pratos.nome, pratos.descricao, pratos.preco, pratos.ca
 $resultado = $conexao->query($sql);
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listar Pratos</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Listar Pratos</h1>
+    <a href="../index.php">Voltar ao Menu</a>
+    <br><br>
+
 <table border="1">
     <tr>
         <th>Nome</th>
