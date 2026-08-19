@@ -1,23 +1,12 @@
 <?php
+include "../conexao.php";
 
-require_once "../conexao.php";
+$id = $_GET["id"];
 
-if (isset($_GET['id'])) {
+$sql = $conexao->prepare("DELETE FROM pratos WHERE id = ?");
+$sql->bind_param("i", $id);
+$sql->execute();
 
-    $id = $_GET['id'];
-
-    $sql = "DELETE FROM pratos WHERE id = ?";
-
-    $stmt = $conexao->prepare($sql);
-    $stmt->bind_param("i", $id);
-
-    if ($stmt->execute()) {
-        header("Location: listar.php");
-        exit;
-    } else {
-        echo "Erro ao excluir o prato.";
-    }
-
-    $stmt->close();
-}
+header("Location: listar.php");
+exit;
 ?>

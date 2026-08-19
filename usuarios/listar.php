@@ -14,11 +14,12 @@ $resultado = $conexao->query($sql);
     <title>Lista de Usuários</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
 
     <h1>Usuários cadastrados</h1>
-        <a href="../index.php">Voltar ao Menu</a>
 
+    <a href="../index.php">Voltar ao Menu</a>
     <a href="cadastrar.php">Cadastrar usuário</a>
 
     <br><br>
@@ -28,6 +29,7 @@ $resultado = $conexao->query($sql);
             <th>ID</th>
             <th>Nome</th>
             <th>E-mail</th>
+            <th>Ações</th>
         </tr>
 
         <?php while ($usuario = $resultado->fetch_assoc()) { ?>
@@ -36,6 +38,11 @@ $resultado = $conexao->query($sql);
                 <td><?php echo $usuario['id']; ?></td>
                 <td><?php echo $usuario['nome']; ?></td>
                 <td><?php echo $usuario['email']; ?></td>
+
+                <td>
+                    <a href="editar.php?id=<?php echo $usuario["id"]; ?>">Editar</a>
+                    <a href="excluir.php?id=<?php echo $usuario["id"]; ?>">Excluir</a>
+                </td>
             </tr>
 
         <?php } ?>
