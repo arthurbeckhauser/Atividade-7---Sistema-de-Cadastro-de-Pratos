@@ -4,7 +4,7 @@ require_once "../conexao.php";
 
 $sql = "SELECT id, nome, email FROM usuarios ORDER BY id DESC";
 
-$resultado = $conn->query($sql);
+$resultado = $conexao->query($sql);
 ?>
 
 <!DOCTYPE html>
