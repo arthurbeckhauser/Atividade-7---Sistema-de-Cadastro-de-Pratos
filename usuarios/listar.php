@@ -12,10 +12,12 @@ $resultado = $conexao->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
     <h1>Usuários cadastrados</h1>
+        <a href="../index.php">Voltar ao Menu</a>
 
     <a href="cadastrar.php">Cadastrar usuário</a>
 
