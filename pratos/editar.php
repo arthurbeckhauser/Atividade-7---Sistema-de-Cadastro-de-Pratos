@@ -25,7 +25,7 @@ $sql->execute();
 $prato = $sql->get_result()->fetch_assoc();
 ?>
 
-<form method="POST" action="editar_prato.php">
+<form method="POST" action="editar.php">
     <input type="hidden" name="id" value="<?php echo $prato["id"]; ?>">
     Nome: <input type="text" name="nome" value="<?php echo $prato["nome"]; ?>"><br>
     Descrição: <input type="text" name="descricao" value="<?php echo $prato["descricao"]; ?>"><br>
