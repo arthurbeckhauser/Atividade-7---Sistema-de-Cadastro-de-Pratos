@@ -28,8 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h1>Usuários cadastrados</h1>
         <a href="../index.php">Voltar ao Menu</a>
 
-    <a href="cadastrar.php">Cadastrar usuário</a>
-
     <br><br>
 
 <form method="POST" action="cadastrar.php">
