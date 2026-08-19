@@ -29,6 +29,18 @@ $sql->execute();
 $prato = $sql->get_result()->fetch_assoc();
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Prato</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Editar Prato</h1>
+    <a href="../index.php">Voltar ao Menu</a>
+    <br><br>
+
 <form method="POST" action="editar.php">
     <input type="hidden" name="id" value="<?php echo $prato["id"]; ?>">
     Nome: <input type="text" name="nome" value="<?php echo $prato["nome"]; ?>"><br>
