@@ -24,7 +24,7 @@ $resultado = $conexao->query($sql);
         <td><?php echo $prato["categoria"]; ?></td>
         <td><?php echo $prato["responsavel"]; ?></td>
         <td>
-            <a href="editar_prato.php?id=<?php echo $prato["id"]; ?>">Editar</a>
+            <a href="editar.php?id=<?php echo $prato["id"]; ?>">Editar</a>
         </td>
     </tr>
     <?php } ?>
