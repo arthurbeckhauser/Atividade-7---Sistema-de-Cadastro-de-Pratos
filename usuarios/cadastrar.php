@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<form method="POST" action="cadastrar_usuario.php">
+<form method="POST" action="cadastrar.php">
     Nome: <input type="text" name="nome"><br>
     Email: <input type="text" name="email"><br>
     <input type="submit" value="Cadastrar">
