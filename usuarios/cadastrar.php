@@ -16,6 +16,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Usuários</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <h1>Usuários cadastrados</h1>
+        <a href="../index.php">Voltar ao Menu</a>
+
+    <a href="cadastrar.php">Cadastrar usuário</a>
+
+    <br><br>
+
 <form method="POST" action="cadastrar.php">
     Nome: <input type="text" name="nome"><br>
     Email: <input type="text" name="email"><br>
