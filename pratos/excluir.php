@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
 
     $sql = "DELETE FROM pratos WHERE id = ?";
 
-    $stmt = $conn->prepare($sql);
+    $stmt = $conexao->prepare($sql);
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {

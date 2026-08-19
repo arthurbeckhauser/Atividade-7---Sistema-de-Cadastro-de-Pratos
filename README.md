@@ -40,7 +40,7 @@ A tabela `pratos` possui uma chave estrangeira relacionada à tabela `usuarios`,
 6. Abra o navegador.
 7. Acesse:
 
-`http://localhost(;sua porta)/(sua pasta htdocs)/Atividade7/`
+`http://localhost(:sua porta)/(sua pasta htdocs)/`
 
 ## Segurança
 
