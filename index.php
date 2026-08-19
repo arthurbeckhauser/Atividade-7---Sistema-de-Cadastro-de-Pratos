@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sistema de Restaurante</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
