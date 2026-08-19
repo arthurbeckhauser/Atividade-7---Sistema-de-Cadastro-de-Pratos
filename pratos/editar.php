@@ -38,7 +38,7 @@ $prato = $sql->get_result()->fetch_assoc();
 
 <body>
     <h1>Editar Prato</h1>
-    <a href="../listar.php">Voltar ao Listar Pratos</a>
+    <a href="listar.php">Voltar ao Listar Pratos</a>
     <br><br>
 
 <form method="POST" action="editar.php">
